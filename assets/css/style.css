@@ -433,6 +433,9 @@ a:visited {
     }
   }
 }
+.hidden{
+  display: none;
+}
 #comment{
   padding-bottom: clamp(2.000rem, 8.53vw, 4.000rem);
   .top-featured{
@@ -476,14 +479,14 @@ a:visited {
         font-weight: 700;
         position: relative;
         top: clamp(-0.250rem, -0.53vw, -0.125rem);
-        span{
+        .text2{
           color: #333;
           font-size: clamp(1.125rem, 4.80vw, 2.250rem);
           display: block;
           position: relative;
           top: clamp(-0.500rem, -1.07vw, -0.250rem);
         }
-        small{
+        .text1{
           font-size: clamp(1.125rem, 4.80vw, 2.250rem);
         }
       }
