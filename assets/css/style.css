@@ -159,8 +159,26 @@ a:visited {
   padding: 0 clamp(1.250rem, 5.33vw, 2.500rem);
 }
 .btn{
-  img{
-    width: 100%;
+  background: url(../img/btn.svg) no-repeat center center/100% 100%;
+  border-radius: clamp(0.750rem, 3.20vw, 1.500rem);
+  width: 100%;
+  a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    padding: clamp(0.625rem, 2.67vw, 1.250rem);
+  }
+  .btn-label{
+    font-size: clamp(0.875rem, 3.73vw, 1.750rem);
+    text-shadow: 0 clamp(0.125rem, 0.53vw, 0.250rem) clamp(0.250rem, 1.07vw, 0.500rem) rgba(104, 47, 0, 0.6);
+  }
+  .btn-title{
+    font-size: clamp(1.250rem, 5.33vw, 2.500rem);
+    text-shadow: 0 clamp(0.125rem, 0.53vw, 0.250rem) clamp(0.250rem, 1.07vw, 0.500rem) rgba(104, 47, 0, 0.6);
+    margin-top: clamp(-0.5rem, -1.07vw, -0.25rem);
   }
 }
 #fv{
@@ -535,5 +553,19 @@ a:visited {
     opacity: 0.6;
     font-size: clamp(0.625rem, 2.67vw, 1.250rem);
     font-weight: 500;
+  }
+}
+.btn-fixed{
+  position: fixed;
+  padding: clamp(1.250rem, 5.33vw, 2.500rem);
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(100%);
+  &.show{
+    transform: translateY(0);
   }
 }
