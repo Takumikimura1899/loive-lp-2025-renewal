@@ -558,7 +558,6 @@ a:visited {
 }
 .btn-fixed{
   position: fixed;
-  padding: clamp(0.625rem, 2.67vw, 1.250rem) clamp(0.313rem, 1.33vw, 0.625rem);
   background: #fff;
   bottom: 0;
   left: 0;
@@ -568,6 +567,19 @@ a:visited {
   transform: translateY(100%);
   &.show{
     transform: translateY(0);
+  }
+  a{
+    padding: clamp(0.625rem, 2.67vw, 1.250rem) clamp(0.313rem, 1.33vw, 0.625rem);
+    display: block;
+  }
+  .fixed-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    flex-direction: column;
+    padding: clamp(0.625rem, 2.67vw, 1.250rem);
   }
 }
 .studio-area .btn .btn-title{
