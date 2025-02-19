@@ -530,6 +530,7 @@ a:visited {
 #footer{
   background-color: #3C3C3C;
   padding: clamp(2.813rem, 12.00vw, 5.625rem) clamp(1.250rem, 5.33vw, 2.500rem) clamp(2.500rem, 10.67vw, 5.000rem);
+  margin-bottom: clamp(5.625rem, 24.00vw, 11.250rem);
   .menu{
     margin-bottom: clamp(0.938rem, 4.00vw, 1.875rem);
     display: flex;
@@ -557,7 +558,7 @@ a:visited {
 }
 .btn-fixed{
   position: fixed;
-  padding: clamp(1.250rem, 5.33vw, 2.500rem);
+  padding: clamp(0.625rem, 2.67vw, 1.250rem) clamp(0.313rem, 1.33vw, 0.625rem);
   background: #fff;
   bottom: 0;
   left: 0;
@@ -568,4 +569,7 @@ a:visited {
   &.show{
     transform: translateY(0);
   }
+}
+.studio-area .btn .btn-title{
+  font-size: clamp(1.063rem, 4.53vw, 2.125rem);
 }
