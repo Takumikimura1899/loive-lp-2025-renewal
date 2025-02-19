@@ -43,3 +43,20 @@ document.addEventListener('DOMContentLoaded', () => {
     initiallyActiveContainer.style.display = 'block';
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const btnFixed = document.querySelector(".btn-fixed");
+  const targetElement = document.querySelector(".btn");
+
+  function checkScroll() {
+      if (!targetElement || !btnFixed) return;
+      const rect = targetElement.getBoundingClientRect();
+      const isAtBottom = rect.bottom <= window.innerHeight; 
+      if (isAtBottom) {
+          btnFixed.classList.add("show");
+      } else {
+          btnFixed.classList.remove("show");
+      }
+  }
+  window.addEventListener("scroll", checkScroll);
+  checkScroll(); 
+});
