@@ -108,6 +108,10 @@ a:visited {
   font-size: clamp(1.250rem, 5.33vw, 2.500rem);
   font-weight: 900;
   top: clamp(1.000rem, 4.27vw, 2.000rem);
+  color: #000 !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   &:hover {
     cursor: pointer;
   }
