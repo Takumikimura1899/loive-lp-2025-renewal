@@ -88,8 +88,12 @@ a:visited {
   background-color: #f6f6f6;
   border-radius: clamp(0.250rem, 1.07vw, 0.500rem);
   box-shadow: clamp(0.063rem, 0.27vw, 0.125rem) clamp(0.063rem, 0.27vw, 0.125rem) clamp(0.250rem, 1.07vw, 0.500rem) 0 #00000040;
+  color: #000 !important;
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  appearance: none;
   &.active {
-    color: #fff;
+    color: #fff !important;
     background-color: #C2B5AA;
     box-shadow: none;
   }
@@ -558,14 +562,16 @@ a:visited {
 }
 .btn-fixed{
   position: fixed;
-  padding: clamp(0.625rem, 2.67vw, 1.250rem) clamp(0.313rem, 1.33vw, 0.625rem);
   background: #fff;
   bottom: 0;
   left: 0;
+  max-width: 750px;
+  padding: clamp(0.625rem, 2.67vw, 1.250rem) clamp(0.313rem, 1.33vw, 0.625rem);
+  margin: 0 auto;
   right: 0;
-  z-index: 100;
-  transition: all 0.5s ease-in-out;
   transform: translateY(100%);
+  transition: all 0.3s;
+  z-index: 100;
   &.show{
     transform: translateY(0);
   }
